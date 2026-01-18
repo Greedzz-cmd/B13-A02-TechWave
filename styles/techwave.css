@@ -241,6 +241,41 @@
 .time {
     color: #00FF88;
 }
+
+/* host-relayted styles */
+.host-section {
+    flex-direction: column;
+    align-items: center;
+}
+.host-info {
+    background-color: rgba(53, 17, 101, 0.4);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-radius: 40px;
+}
+
+.host-content {
+    width: 80%;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.host-socials {
+    gap: 8px;
+    align-items: center;
+}
+
+.host-social {
+    padding: 12px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+}
+
+.host-social img {
+    width: 16px;
+    height: 16px;
+}
 /* responsive related styles */
 
 @media screen and (max-width: 576px) {
