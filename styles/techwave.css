@@ -1,11 +1,16 @@
-
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
 
 /* shared styles */
-
+.text-white {
+    color: #FFFFFF;
+}
 .flex {
     display: flex;
 }
@@ -18,21 +23,40 @@
     padding: 15px 20px;
     font-size: 16px;
     font-weight: 600;
-    color: #FFFFFF;
     background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
     border-radius: 10000px;
     border: none;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
 }
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 #9100F8 }
+  70% { box-shadow: 0 0 0 8px #1A0B2E ; }
+  100% { box-shadow: 0 0 0 0 #1A0B2E; }
+}
+
+.btn-secondary {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    color: #00FF88;
+    border: 1px solid #00FF88;
+    border-radius: 10000px;
+}
+
+
 
 /* navbar related styles */
 .nav-bar {
     background-color: #1A0B2E;
     justify-content: space-between;
     align-items: center;
+    padding: 36px 40px;
 }
 .brand {
     font-size: 45px;
-    color: #FFFFFF;
 }
 .gradient {
     background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
@@ -47,6 +71,63 @@
 
 .nav-link {
     text-decoration: none;
-    color: #FFFFFF;
     font-weight: 500;
+}
+
+#toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* banner related styles */
+
+.banner {
+    background-image: url('../assets/hero-bg.png');
+    text-align: center;
+}
+/* .banner-icon {
+    position: relative;
+}
+.banner-circle {
+    display: block;
+    transform: translate(50%, 50%);
+}
+
+.banner-mic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+} */
+
+.banner-heading {
+    font-size: 60px;
+    font-weight: 800;
+}
+/* responsive related styles */
+
+@media screen and (max-width: 576px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #1A0B2E;
+        gap: 12px;
+        padding: 15px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        border-radius: 10px;
+    }
+
+    #toggle:checked~.nav-links {
+        display: flex;
+    }
+
 }
