@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0%;
 }
+ body {
+    background-color: #1A0B2E;
+}
 .inter {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -46,7 +49,15 @@
     border-radius: 10000px;
 }
 
+.section-heading {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    padding-top: 120px;
+}
 
+.section-description {
+    line-height: 20px;
+}
 
 /* navbar related styles */
 .nav-bar {
@@ -56,7 +67,7 @@
     padding: 36px 40px;
 }
 .brand {
-    font-size: 45px;
+    font-size: 2.8rem;
 }
 .gradient {
     background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
@@ -87,7 +98,11 @@
 
 .banner {
     background-image: url('../assets/hero-bg.png');
+    background-color: #1A0B2E;
     text-align: center;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 /* .banner-icon {
     position: relative;
@@ -104,8 +119,116 @@
 } */
 
 .banner-heading {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+.btns {
+    margin-top: 24px;
+}
+/* abt section related styles */
+.abt {
+    background-color: #1A0B2E;
+    text-align: center;
+}
+
+.join {
+    margin-bottom: 80px;
+}
+.card-container{
+    justify-content: space-around;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.card {
+    text-align: center;
+}
+
+.badge {
+    color: #00FF88;
+    font-size: 3rem;
+}
+
+.section-description {
+    margin-bottom: 20px;
+}
+
+
+/* why-choose section */
+
+.why-choose {
+    text-align: center;
+    background-color: #230E3D;
+}
+
+.why-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 30px;
+}
+
+.why-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+
+.why-heading {
+    font-size: 1.5rem;
+}
+
+.audio {
+    grid-row: span 2;
+    padding: 107px 40px;
+}
+
+.mobile {
+    grid-column: span 2;
+    padding: 40px;
+}
+
+.community {
+    grid-column: span 2;
+    padding: 40px;
+}
+
+.interview {
+    grid-column: span 2;
+    padding: 40px;
+}
+
+.resource {
+    padding: 40px;
+}
+
+/* featured related styles */
+
+.featured {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.video-container {
+    gap: 30px;
+}
+
+.video iframe {
+    width: 70%;
+    height: 200px;
+}
+
+.video-heading {
+    font-size: 1.5rem;
+}
+
+.video-description {
+    line-height: 24px;
+}
+
+.video-content {
+    padding: 24px;
 }
 /* responsive related styles */
 
