@@ -59,6 +59,16 @@
     line-height: 20px;
 }
 
+hr {
+    height: 2px;
+    width: 80%;        
+    color: #aeacac;
+    border-top: 1px solid #1A0B2E;
+    margin-right: auto;
+    margin-left: auto; 
+    opacity: 0.5;
+}
+
 /* navbar related styles */
 .nav-bar {
     background-color: #1A0B2E;
@@ -121,8 +131,8 @@
 
 .banner-mic {
     position: absolute;
-    transform: translate(-171%, 20%);
-    width: 11.5%;
+    transform: translate(-210%, 40%);
+    width: 8.5%;
     
 }
 
@@ -195,6 +205,12 @@
 .why-card {
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    
 }
 
 .why-heading {
@@ -225,6 +241,10 @@
     padding: 40px;
 }
 
+.interview img {
+    height: 65px;
+    width: 70px;
+}
 /* featured related styles */
 
 .featured .section-heading{
@@ -239,6 +259,8 @@
 
 .video {
     background-color: #250D44;
+    border-radius: 40px;
+    overflow: hidden;
     /* border-radius: 50px; */
 }
 .video iframe {
@@ -375,14 +397,15 @@
     }
     .banner-circle {
         position: relative;
-        transform: translate(0, -65%);
-        width: 40%;
+        transform: translate(0, -55%);
+        width: 50%;
         
     }
 
     .banner-mic {
         position: absolute;
-        transform: translate(-215%,-90%);
+        transform: translate(-270%,-74%);
+        width: 11%;
         
     }
 
@@ -396,12 +419,14 @@
     }
     .card-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 30px;
     }
 
     .why-cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 300px;
         justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .video-container {
@@ -411,13 +436,30 @@
     .host-info {
         flex-direction: column;
     }
+
+    .host-socials {
+        margin-top: 10px;
+    }
     .footer-section {
+        background-image: url(../assets/footer-bg\ -\ cropped.png);
         background-size: 100% 400px;
     }
 
+    .footer-logo {
+        font-size: 2.75rem;
+        font-weight: 800;
+    }
     .socials-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 130px);
         gap: 10px;
+    }
+
+    .socials a {
+        font-size: 11.5px;
+    }
+
+    .copyright {
+        font-size: 11.5px;
     }
 }
 
