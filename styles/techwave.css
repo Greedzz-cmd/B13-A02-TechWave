@@ -94,6 +94,10 @@
     cursor: pointer;
 }
 
+.sub-btn {
+    list-style: none;
+}
+
 /* banner related styles */
 
 .banner {
@@ -102,8 +106,8 @@
     background-repeat: no-repeat;
     background-color: #1A0B2E;
     text-align: center;
-    margin-bottom: 50px;
-    padding: 100px 20px;
+    margin-bottom: 30px;
+    padding: 100px 20px 40px;
     position: relative;
 }    
 .banner-icon {
@@ -136,7 +140,6 @@
 .banner-heading {
     font-size: 3.75rem;
     font-weight: 800;
-    margin-top: 40px;
     margin-bottom: 8px;
 }
 
@@ -149,6 +152,7 @@
 .abt {
     background-color: #1A0B2E;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .join {
@@ -185,6 +189,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 300px);
     gap: 30px;
+    padding: 20px;
 }
 
 .why-card {
@@ -338,6 +343,10 @@
         display: block;
     }
 
+    .nav-sub {
+        display: none;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -348,6 +357,7 @@
         top: 60px;
         right: 20px;
         border-radius: 10px;
+        z-index: 9999;
     }
 
     #toggle:checked~.nav-links {
@@ -356,6 +366,8 @@
 
     .banner {
         width: 100%;
+        padding: 90px 10px 10px;
+        margin-top: 20px;
     }
 
     .banner-icon {
@@ -363,19 +375,20 @@
     }
     .banner-circle {
         position: relative;
-        transform: translate(0, -80%);
+        transform: translate(0, -65%);
+        width: 40%;
         
     }
 
     .banner-mic {
         position: absolute;
-        transform: translate(-167%,-100%);
+        transform: translate(-215%,-90%);
         
     }
 
     .new-badge {
         position: absolute;
-        transform: translate(-20%, -240%);
+        transform: translate(-10%, -290%);
     }
 
     .btns {
@@ -383,6 +396,7 @@
     }
     .card-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
     }
 
     .why-cards {
@@ -398,10 +412,57 @@
         flex-direction: column;
     }
     .footer-section {
-        background-size: cover;
+        background-size: 100% 400px;
     }
 
     .socials-container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 }
+
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    .banner-icon {
+        position: relative;
+    }
+    .banner-circle {
+        position: relative;
+        transform: translate(0, -35%);
+        
+    }
+
+    .banner-mic {
+        position: absolute;
+        transform: translate(-170%,-30%);
+        
+    }
+
+    .new-badge {
+        position: absolute;
+        transform: translate(-25%, -220%);
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+        .video-container {
+        flex-direction: column;
+    }
+
+    .host-info {
+        flex-direction: column;
+    }
+    .footer-section {
+        background-size: 100% 400px;
+    }
+
+    .socials-container {
+        grid-template-columns: repeat(2, 150px);
+        gap: 10px;
+    }
+}
+
