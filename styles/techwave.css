@@ -34,9 +34,9 @@
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 #9100F8 }
-  70% { box-shadow: 0 0 0 8px #1A0B2E ; }
-  100% { box-shadow: 0 0 0 0 #1A0B2E; }
+    0% { box-shadow: 0 0 0 0 #9100F8 }
+    70% { box-shadow: 0 0 0 8px #1A0B2E ; }
+    100% { box-shadow: 0 0 0 0 #1A0B2E; }
 }
 
 .btn-secondary {
@@ -47,6 +47,13 @@
     color: #00FF88;
     border: 1px solid #00FF88;
     border-radius: 10000px;
+    animation: pulse-2 1.5s infinite;
+}
+
+@keyframes pulse-2 {
+    0% { box-shadow: 0 0 0 0 #00FF88;}
+    70% { box-shadow: 0 0 0 8px #1A0B2E;}
+    100% { box-shadow: 0 0 0 0 #1A0B2E;}
 }
 
 .section-heading {
@@ -193,6 +200,7 @@ hr {
 .why-choose {
     text-align: center;
     background-color: #230E3D;
+    padding-bottom: 100px;
 }
 
 .why-cards {
@@ -477,13 +485,13 @@ hr {
 
     .banner-mic {
         position: absolute;
-        transform: translate(-170%,-30%);
+        transform: translate(-210%,-20%);
         
     }
 
     .new-badge {
         position: absolute;
-        transform: translate(-25%, -220%);
+        transform: translate(-40%, -200%);
     }
 
     .card-container {
